@@ -10,14 +10,13 @@
 
 }
 
-/* actor-regular - latin */
 @font-face {
   font-family: 'Actor';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/actor-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/actor-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/actor-v17-latin-regular.woff2') format('woff2'), 
+       url('../fonts/actor-v17-latin-regular.woff') format('woff');
 }
 * {
   box-sizing: border-box;
@@ -113,10 +112,9 @@ body {
   width: 190px;
   padding: 9px 10px;
   border: 0;
-
   outline: none;
   font-weight: 400;
-font-size: 10px;
+font-size: 8px;
 line-height: 9px;
 color: var(--main-text-color-black);
 border: 1px solid #ffffff;
@@ -128,8 +126,9 @@ border: 1px solid #969696;
 .card-group .forms .card .input::placeholder {
 color:var(--main-input-text-color-grey);
 font-weight: 400;
-font-size: 10px;
+font-size: 8px;
 line-height: 9px;
+font-family: "Actor",sans-serif;
 }
 .card-group .forms .card .girl,.boy {
   display: flex;
@@ -225,5 +224,8 @@ input[name="silver"]:checked + .label-radio .radius {
 .card-group .forms .btn-group .btn:nth-child(2) {
 background-color: var(--main-btn-color-grin);
 color: var(--main-color-white);
+
+}
+::-webkit-calendar-picker-indicator {
 
 }
