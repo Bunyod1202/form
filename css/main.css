@@ -1,12 +1,12 @@
 :root {
-  --main-card-color-grey:#C7C7C7;
-  --main-input-color-grey:#F5F8F9;
-  --main-input-text-color-grey:#B1BFCD;
-  --main-checkbox-color-grey:#F5F8F9;
-  --main-text-color-black:#383838;
-  --main-btn-color-grin:#60E6C5;
-  --main-color-yello:#FFD500;
-  --main-color-white:#ffffff;
+  --main-card-color-grey: #C7C7C7;
+  --main-input-color-grey: #F5F8F9;
+  --main-input-text-color-grey: #B1BFCD;
+  --main-checkbox-color-grey: #F5F8F9;
+  --main-text-color-black: #383838;
+  --main-btn-color-grin: #60E6C5;
+  --main-color-yello: #FFD500;
+  --main-color-white: #ffffff;
 
 }
 
@@ -15,16 +15,19 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/actor-v17-latin-regular.woff2') format('woff2'), 
-       url('../fonts/actor-v17-latin-regular.woff') format('woff');
+    url('../fonts/actor-v17-latin-regular.woff2') format('woff2'),
+    url('../fonts/actor-v17-latin-regular.woff') format('woff');
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0px;
-  font-family: "Actor",sans-serif;
+  font-family: "Actor", sans-serif;
 }
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -34,21 +37,25 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+
 .hero {
   padding: 77px;
   background-color: #f2f2f2;
 }
+
 .container {
   width: 720px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .card-group {
   display: flex;
   border-radius: 22px;
-  background-color:var(--main-color-white) ;
+  background-color: var(--main-color-white);
   width: 680px;
 }
+
 .card-group .user {
   background-color: var(--main-color-yello);
   background-image: url("../images/user.png");
@@ -59,6 +66,7 @@ body {
   border-bottom-left-radius: 22px;
   border-top-left-radius: 22px;
 }
+
 .card-group .user .title {
   margin: 196px 0 10px 0;
   font-weight: 400;
@@ -67,6 +75,7 @@ body {
   color: var(--main-text-color-black);
   text-align: center;
 }
+
 .card-group .user .text {
   font-weight: 400;
   font-size: 11px;
@@ -75,68 +84,80 @@ body {
   text-align: center;
   margin: 0;
 }
+
 .card-group .user .buttom {
   display: flex;
   justify-content: center;
   margin-top: 38px;
 }
+
 .card-group .user .buttom .btn {
- border: 0;
- background-color: transparent;
- width: 35px;
- height: 35px;
- padding: 0;
- border-radius: 50%;
+  border: 0;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 50%;
 
 }
+
 .card-group .forms {
   padding: 53px 72px;
   width: 403px;
 
 }
+
 .card-group .forms .label {
   font-weight: 400;
   font-size: 10px;
   line-height: 9px;
   color: var(--main-text-color-black);
 }
+
 .card-group .forms .card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .card-group .forms .card .input {
-  background-color:var(--main-input-color-grey);
+  background-color: var(--main-input-color-grey);
   border-radius: 3px;
   width: 190px;
   padding: 9px 10px;
   border: 0;
   outline: none;
   font-weight: 400;
-font-size: 8px;
-line-height: 9px;
-color: var(--main-text-color-black);
-border: 1px solid #ffffff;
+  font-size: 8px;
+  line-height: 9px;
+  color: var(--main-text-color-black);
+  border: 1px solid #ffffff;
 }
+
 .card-group .forms .card .input:focus {
-border: 1px solid #969696;
+  border: 1px solid #969696;
 
 }
+
 .card-group .forms .card .input::placeholder {
-color:var(--main-input-text-color-grey);
-font-weight: 400;
-font-size: 8px;
-line-height: 9px;
-font-family: "Actor",sans-serif;
+  color: var(--main-input-text-color-grey);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  font-family: "Actor", sans-serif;
 }
-.card-group .forms .card .girl,.boy {
+
+.card-group .forms .card .girl,
+.boy {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
-.card-group .forms .card .girl label,.boy label {
+
+.card-group .forms .card .girl label,
+.boy label {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,43 +168,50 @@ font-family: "Actor",sans-serif;
   color: var(--main-input-text-color-grey);
 }
 
-.card-group .forms .card .girl .radius,.boy .radius {
+.card-group .forms .card .girl .radius,
+.boy .radius {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   background-color: var(--main-input-color-grey);
-  
+
   margin-right: 10px;
 }
+
 .card-group .forms .card .girl .radius {
   background-image: url("../images/girl.png");
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
+
 .card-group .forms .card .boy .radius {
   background-image: url("../images/boy.png");
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
-input[type="radio"]:checked + .girl .radius {
+
+input[type="radio"]:checked+.girl .radius {
   border: 2px solid #969696;
 }
-input[type="radio"]:checked + .boy .radius {
-  border: 2px solid #969696; 
+
+input[type="radio"]:checked+.boy .radius {
+  border: 2px solid #969696;
 }
 
 .card-group .forms .membership {
   margin-bottom: 41px
 }
+
 .card-group .forms .membership .radios {
   display: flex;
   justify-content: space-between;
   width: 190px;
-  
+
 }
-.card-group .forms .membership label{
+
+.card-group .forms .membership label {
   font-weight: 400;
   font-size: 10px;
   line-height: 9px;
@@ -192,24 +220,28 @@ input[type="radio"]:checked + .boy .radius {
   align-items: center;
   ;
 }
-.card-group .forms .membership label .radius{
+
+.card-group .forms .membership label .radius {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color:var(--main-card-color-grey); 
+  background-color: var(--main-card-color-grey);
   margin-right: 5px;
   background-image: url("../images/card.png");
   background-repeat: no-repeat;
   background-position: center;
 }
-input[name="silver"]:checked + .label-radio .radius {
-  background-color:var(--main-text-color-black);
+
+input[name="silver"]:checked+.label-radio .radius {
+  background-color: var(--main-text-color-black);
 }
+
 .card-group .forms .btn-group {
   display: flex;
   align-items: center;
-  justify-content: flex-end ;
+  justify-content: flex-end;
 }
+
 .card-group .forms .btn-group .btn {
   font-weight: 400;
   font-size: 10px;
@@ -221,11 +253,16 @@ input[name="silver"]:checked + .label-radio .radius {
   border: 0;
   margin-right: 10px;
 }
+
 .card-group .forms .btn-group .btn:nth-child(2) {
-background-color: var(--main-btn-color-grin);
-color: var(--main-color-white);
+  background-color: var(--main-btn-color-grin);
+  color: var(--main-color-white);
 
 }
-::-webkit-calendar-picker-indicator {
 
+::-webkit-calendar-picker-indicator {
+  background-image: url(../images/deta.png);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
